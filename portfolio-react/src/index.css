@@ -1,5 +1,5 @@
 :root {
-  --cream: #a3718c;
+  --pink: #a3718c;
   --card: #ffffff;
   --muted: #6b7280;
   --accent: #f472b6;
@@ -10,16 +10,12 @@
 *{box-sizing:border-box}
 
 body{
-  /* keep your cream */
-  background-color: var(--cream);
+  background-color: var(--pink);
 
-  /* Layer: subtle animated svg pattern only (remove white radial glows) */
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260' viewBox='0 0 260 260'><rect width='260' height='260' fill='none'/><g fill='none' stroke='%23ffffff' stroke-opacity='0.28' stroke-width='2'><path d='M40 70 l-16 14 16 14' /><path d='M90 70 l16 14 -16 14' /><path d='M62 64 l-10 40' /></g><g fill='none' stroke='%23ffffff' stroke-opacity='0.22' stroke-width='2'><rect x='150' y='60' width='84' height='56' rx='10'/><path d='M162 88 h48' /><path d='M162 102 h32' /></g><g fill='none' stroke='%23ffffff' stroke-opacity='0.18' stroke-width='2'><path d='M40 170 h60' /><path d='M40 190 h40' /><rect x='30' y='154' width='86' height='56' rx='12'/></g><g fill='none' stroke='%23ffffff' stroke-opacity='0.18' stroke-width='2'><path d='M150 170 v38 h86' /><path d='M158 192 l18 -16 18 10 18 -22 18 12' /></g></svg>");
   background-repeat: repeat;
   background-size: 260px 260px;
   background-position: 0 0;
-
-  /* animated slow drift */
   animation: bgDrift 28s linear infinite;
 }
 
@@ -28,7 +24,7 @@ body{
   to   { background-position: 260px 260px, 80px 40px, -60px 30px; }
 }
 
-/* Optional: reduce motion support */
+
 @media (prefers-reduced-motion: reduce){
   body{ animation: none; }
 }
@@ -127,7 +123,7 @@ body{
 
 .mini-card {
   border: 1px solid rgba(17,17,17,0.06);
-  background: #ffffff; /* solid white so it doesn't blend with cream page bg */
+  background: #ffffff; 
   border-radius: 16px;
   padding: 18px;
   box-shadow: 0 10px 30px rgba(11,12,15,0.04);
@@ -176,7 +172,7 @@ body{
 
 .home-photo {
   display: flex;
-  justify-content: flex-end; /* biar rapi di kanan */
+  justify-content: flex-end; 
 }
 
 .profile-pic {
@@ -439,9 +435,7 @@ body{
   to   { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
 }
 
-/* ================================
-   ABOUT PAGE (CENTER HERO)
-================================ */
+/* ABOUT PAGE (CENTER HERO)*/
 .about-page {
   display: flex;
   flex-direction: column;
@@ -524,9 +518,7 @@ body{
   background: rgba(17, 17, 17, 0.06);
 }
 
-/* ================================
-   EXPERIENCE
-================================ */
+/* EXPERIENCE */
 .exp-list {
   display: flex;
   flex-direction: column;
@@ -568,9 +560,7 @@ body{
   font-size: 14px;
 }
 
-/* ================================
-   EDUCATION
-================================ */
+/* EDUCATION */
 .edu-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -639,9 +629,7 @@ body{
   .edu-right { text-align: left; }
 }
 
-/* ================================
-   CERTIFICATIONS (THUMB + MODAL)
-================================ */
+/* CERTIFICATIONS (THUMB + MODAL) */
 .cert-grid {
   margin-top: 14px;
   display: grid;
@@ -789,9 +777,7 @@ body{
   background: #fff;
   border-radius: 12px;
 }
-/* ================================
-   SCROLL FADE ANIMATION
-================================ */
+
 .fade-section {
   opacity: 0;
   transform: translateY(20px) scale(.995);
@@ -806,9 +792,7 @@ body{
   filter: blur(0);
 }
 
-/* ================================
-   PROJECTS PAGE
-================================ */
+/* PROJECTS PAGE*/
 .projects-page {
   display: flex;
   flex-direction: column;
