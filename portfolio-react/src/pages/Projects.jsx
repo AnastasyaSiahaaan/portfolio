@@ -9,6 +9,7 @@ import thumbStudyswap from "../assets/thumbnails/studyswap.jpg";
 
 export default function Projects() {
   const pdfThumb = (pdfPath) => `${pdfPath}#page=1&view=FitH`;
+  const BASE_URL = import.meta.env.BASE_URL;
 
   const projects = useMemo(
     () => [
@@ -41,9 +42,9 @@ export default function Projects() {
         desc: "Curriculum/RPS database system work. I handled documentation and created structured tables together with my team.",
         role: "Documentation owner + table design",
         tech: ["System Analysis", "Database Modeling", "Documentation"],
-        pdf: "/projects/rps-curriculum.pdf",
+        pdf: `${BASE_URL}projects/rps-curriculum.pdf`,
         thumbnail: thumbRps,
-        links: [{ label: "PDF", href: "/projects/rps-curriculum.pdf" }],
+        links: [{ label: "PDF", href: `${BASE_URL}projects/rps-curriculum.pdf` }],
       },
 
       {
@@ -54,9 +55,9 @@ export default function Projects() {
         desc: "Business process modeling for new student admission workflow (team project).",
         role: "Contributed to process modeling + documentation",
         tech: ["Business Process", "BPMN", "Documentation"],
-        pdf: "/projects/business-process-admission.pdf",
+        pdf: `${BASE_URL}projects/business-process-admission.pdf`,
         thumbnail: thumbBusiness,
-        links: [{ label: "PDF", href: "/projects/business-process-admission.pdf" }],
+        links: [{ label: "PDF", href: `${BASE_URL}projects/business-process-admission.pdf` }],
       },
 
       {
@@ -67,10 +68,10 @@ export default function Projects() {
         desc: "SRS documentation for StudySwap system, with supporting UI flow in Figma.",
         role: "SRS contributor (team) + supporting design references",
         tech: ["SRS", "System Analysis", "Figma"],
-        pdf: "/projects/studyswap-srs.pdf",
+        pdf: `${BASE_URL}projects/studyswap-srs.pdf`,
         thumbnail: thumbStudyswap,
         links: [
-          { label: "PDF", href: "/projects/studyswap-srs.pdf" },
+          { label: "PDF", href: `${BASE_URL}projects/studyswap-srs.pdf` },
           {
             label: "Figma",
             href: "https://www.figma.com/design/LpW1JHzDmmiz9AEG3fT0ZF/Anaprancis?node-id=0-1&t=xpugUQ1bu7y97mnC-1",

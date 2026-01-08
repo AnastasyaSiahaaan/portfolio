@@ -102,14 +102,14 @@ export default function About() {
     },
   ];
 
-  // PDF tetap dari public/certificates
+  // PDF tetap dari public/certificates (dengan BASE_URL dinamis)
   const certificates = [
     {
       id: "cert1",
       title: "Associate Data Scientist",
       issuer: "BBPSDMP Medan – KOMDIGI (VSGA) • 2025",
       type: "pdf",
-      src: "/certificates/cert1.pdf",
+      src: `${import.meta.env.BASE_URL}certificates/cert1.pdf`,
       thumb: cert1Thumb,
     },
     {
@@ -117,7 +117,7 @@ export default function About() {
       title: "Belajar Dasar AI",
       issuer: "Dicoding Indonesia • 2025",
       type: "pdf",
-      src: "/certificates/cert2.pdf",
+      src: `${import.meta.env.BASE_URL}certificates/cert2.pdf`,
       thumb: cert2Thumb,
     },
     {

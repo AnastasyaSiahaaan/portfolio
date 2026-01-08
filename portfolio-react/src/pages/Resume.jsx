@@ -1,6 +1,6 @@
 export default function Resume() {
   // ✅ taruh PDF di: public/resume/cv.pdf
-  const CV_URL = "/portfolio/Public/resume/cv.pdf";
+  const CV_URL = `${import.meta.env.BASE_URL}resume/cv.pdf`;
 
   return (
     <div className="resume-page">
