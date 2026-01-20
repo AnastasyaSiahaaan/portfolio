@@ -6,6 +6,7 @@ import thumbRumah from "../assets/thumbnails/rumah-kreatif-toba.jpg";
 import thumbRps from "../assets/thumbnails/rps.jpg";
 import thumbBusiness from "../assets/thumbnails/business-process.jpg";
 import thumbStudyswap from "../assets/thumbnails/studyswap.jpg";
+import thumbPowerBI from "../assets/thumbnails/power-bi-dashboard.jpg";
 
 export default function Projects() {
   const pdfThumb = (pdfPath) => `${pdfPath}#page=1&view=FitH`;
@@ -13,6 +14,23 @@ export default function Projects() {
 
   const projects = useMemo(
     () => [
+      {
+        id: "supermarket-sales-dashboard",
+        title: "Supermarket Sales Dashboard",
+        type: "Data Analytics Project",
+        highlight: "Power BI Analytics",
+        desc: "Interactive sales analytics dashboard built with Power BI. Visualizes supermarket sales data with key metrics, profit trends, and product performance insights.",
+        role: "Dashboard design & implementation",
+        tech: ["Power BI", "Data Analytics", "DAX", "Visualization"],
+        thumbnail: thumbPowerBI,
+        links: [
+          {
+            label: "Download",
+            href: `${BASE_URL}projects/supermarket-sales-dashboard.pbix`,
+          },
+        ],
+      },
+
       {
         id: "bimbel-farmasi",
         title: "Bimbel Farmasi",

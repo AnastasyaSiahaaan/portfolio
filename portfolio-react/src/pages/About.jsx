@@ -90,7 +90,7 @@ export default function About() {
       major: "Information Systems",
       period: "2023 — Present",
       gpaLabel: "Current GPA",
-      gpaValue: "3.39 / 4.00",
+      gpaValue: "3.48 / 4.00",
     },
     {
       level: "Senior High School",
